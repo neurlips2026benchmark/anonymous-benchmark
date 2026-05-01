@@ -58,91 +58,91 @@ neurlips_code/
 ### 1. Evaluate all DPI and IPI results
 
 ```bash
-python run_judge.py ^
+python run_judge.py \
   --root neurlips_code
 ```
 
 ### 2. Evaluate all DPI results
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
+python run_judge.py \
+  --root neurlips_code \
   --attack DPI
 ```
 
 ### 3. Evaluate all IPI results
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
+python run_judge.py \
+  --root neurlips_code \
   --attack IPI
 ```
 
 ### 4. Evaluate all templates for one agent under DPI
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack DPI ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack DPI \
   --agent NanoBrowser
 ```
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack DPI ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack DPI \
   --agent BrowserUse
 ```
 
 ### 5. Evaluate all templates for one agent under IPI
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack IPI ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack IPI \
   --agent NanoBrowser
 ```
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack IPI ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack IPI \
   --agent BrowserUse
 ```
 
 ### 6. Evaluate one template for one agent under DPI
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack DPI ^
-  --agent NanoBrowser ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack DPI \
+  --agent NanoBrowser \
   --template_id E1.1
 ```
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack DPI ^
-  --agent BrowserUse ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack DPI \
+  --agent BrowserUse \
   --template_id E1.1
 ```
 
 ### 7. Evaluate one template for one agent under IPI
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack IPI ^
-  --agent NanoBrowser ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack IPI \
+  --agent NanoBrowser \
   --template_id T4.1
 ```
 
 ```bash
-python run_judge.py ^
-  --root neurlips_code ^
-  --attack IPI ^
-  --agent BrowserUse ^
+python run_judge.py \
+  --root neurlips_code \
+  --attack IPI \
+  --agent BrowserUse \
   --template_id T4.1
 ```
 
