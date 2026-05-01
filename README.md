@@ -219,7 +219,7 @@ To generate your own agent trajectories, you need to install the OneStopMarket e
 ```
 
 
-## 9. Quick Start
+## 9. Quick Start to reproduce the automatic judging results 
 
 ### 9.1. Evaluate all DPI and IPI results
 
