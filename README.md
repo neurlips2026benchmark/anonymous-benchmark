@@ -149,16 +149,49 @@ export OPENAI_API_KEY=your_api_key
 ```
 
 
-## 8. Quick Start
+## 8. Running the Benchmark
 
-### 8.1. Evaluate all DPI and IPI results
+The released archive contains the pre-computed agent execution logs used in the paper.  
+The default review workflow is therefore:
+
+1. inspect the benchmark templates and task definitions under `LLM_judge/`;
+2. inspect the pre-computed agent trajectories under `Agent_Execution_log/`;
+3. reproduce the automatic judging results using `run_judge.py`.
+
+To generate your own agent trajectories, you need to install the OneStopMarket e-commerce environment from VisualWebArena and connect your web agent. This requires:
+
+- launching the sandboxed shopping environment from VisualWebArena;
+- instantiating the benchmark templates and placing the corresponding DPI or IPI payloads into the shopping environment and agents;
+- running NanoBrowser, BrowserUse, or another web agent with the selected backbone model;
+- saving the resulting trajectory in the expected JSON format:
+```json
+{
+  "run_id": "the_log_file_name",
+  "template_id": "",
+  "model": "",
+  "trial_index": 1,
+  "trial_total": 3,
+  "category": "product or category name",
+  "status": "",
+  "runtime": {
+    "trajectory_text": "...",
+    "final_state_text": "...",
+    "attachments_text": ""
+  }
+}
+
+
+
+## 9. Quick Start
+
+### 9.1. Evaluate all DPI and IPI results
 
 ```bash
 python run_judge.py ^
   --root neurlips_code
 ```
 
-### 8.2. Evaluate all DPI results
+### 9.2. Evaluate all DPI results
 
 ```bash
 python run_judge.py ^
@@ -166,7 +199,7 @@ python run_judge.py ^
   --attack DPI
 ```
 
-### 8.3. Evaluate all IPI results
+### 9.3. Evaluate all IPI results
 
 ```bash
 python run_judge.py ^
@@ -174,7 +207,7 @@ python run_judge.py ^
   --attack IPI
 ```
 
-### 8.4. Evaluate all templates for one agent under DPI
+### 9.4. Evaluate all templates for one agent under DPI
 
 ```bash
 python run_judge.py ^
@@ -190,7 +223,7 @@ python run_judge.py ^
   --agent BrowserUse
 ```
 
-### 8.5. Evaluate all templates for one agent under IPI
+### 9.5. Evaluate all templates for one agent under IPI
 
 ```bash
 python run_judge.py ^
@@ -206,7 +239,7 @@ python run_judge.py ^
   --agent BrowserUse
 ```
 
-### 8.6. Evaluate one template for one agent under DPI
+### 9.6. Evaluate one template for one agent under DPI
 
 ```bash
 python run_judge.py ^
@@ -224,7 +257,7 @@ python run_judge.py ^
   --template_id E1.1
 ```
 
-### 8.7. Evaluate one template for one agent under IPI
+### 9.7. Evaluate one template for one agent under IPI
 
 ```bash
 python run_judge.py ^
@@ -257,3 +290,13 @@ python run_judge.py ^
 ### 9.1 Anonymization
 
 This repository is anonymized for double-blind review. It does not include author names, institutional identifiers, private repository links, or non-anonymous contact information.
+
+
+
+
+
+
+
+
+
+
