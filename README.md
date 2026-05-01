@@ -158,7 +158,8 @@ The default review workflow is therefore:
 2. inspect the pre-computed agent trajectories under `Agent_Execution_log/`;
 3. reproduce the automatic judging results using `run_judge.py`.
 
-To generate your own agent trajectories, you need to install the OneStopMarket e-commerce environment from VisualWebArena and connect your web agent. This requires:
+To generate your own agent trajectories, you need to install the OneStopMarket e-commerce environment 
+([[https://github.com/web-arena-x/webarena](https://github.com/web-arena-x/webarena)]) and connect your web agent. This requires:
 
 - launching the sandboxed shopping environment from VisualWebArena;
 - instantiating the benchmark templates and placing the corresponding DPI or IPI payloads into the shopping environment and agents;
