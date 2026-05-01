@@ -162,7 +162,7 @@ To generate your own agent trajectories, you need to install the OneStopMarket e
 ([[https://github.com/web-arena-x/webarena](https://github.com/web-arena-x/webarena)]) and connect your web agent. This requires:
 
 - launching the sandboxed shopping environment from VisualWebArena;
-- instantiating the benchmark templates and placing the corresponding DPI or IPI payloads into the shopping environment and agents. The example of one bechmark template is shown below. you need to place the to the shopping environment (review section).
+- instantiating the benchmark templates and placing the corresponding DPI or IPI payloads into the shopping environment and agents. The example of one IPI bechmark template is shown below. you need to place the `injection_content` to the shopping environment(review section) and send `input_prompt` to the agent.
 
 ```json
 {
