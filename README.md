@@ -58,15 +58,13 @@ neurlips_code/
 ### 1. Evaluate all DPI and IPI results
 
 ```bash
-python run_judge.py \
-  --root neurlips_code
+python run_judge.py 
 ```
 
 ### 2. Evaluate all DPI results
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack DPI
 ```
 
@@ -74,7 +72,6 @@ python run_judge.py \
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack IPI
 ```
 
@@ -82,14 +79,12 @@ python run_judge.py \
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack DPI \
   --agent NanoBrowser
 ```
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack DPI \
   --agent BrowserUse
 ```
@@ -98,14 +93,12 @@ python run_judge.py \
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack IPI \
   --agent NanoBrowser
 ```
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack IPI \
   --agent BrowserUse
 ```
@@ -114,7 +107,6 @@ python run_judge.py \
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack DPI \
   --agent NanoBrowser \
   --template_id E1.1
@@ -122,7 +114,6 @@ python run_judge.py \
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack DPI \
   --agent BrowserUse \
   --template_id E1.1
@@ -132,7 +123,6 @@ python run_judge.py \
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack IPI \
   --agent NanoBrowser \
   --template_id T4.1
@@ -140,7 +130,6 @@ python run_judge.py \
 
 ```bash
 python run_judge.py \
-  --root neurlips_code \
   --attack IPI \
   --agent BrowserUse \
   --template_id T4.1
